@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import javax.xml.crypto.Data;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 
 @Service
@@ -26,5 +28,10 @@ public class MinhasDatasService {
 
     public ResponseEntity<Object> findAll() {
         return ResponseEntity.status(HttpStatus.OK).body(minhasDatasRepository.findAll());
+    }
+
+    public ResponseEntity<Object> findAllByData(LocalDate myDate) {
+
+        return ResponseEntity.status(HttpStatus.OK).body(minhasDatasRepository.findAllByMyData(myDate));
     }
 }
