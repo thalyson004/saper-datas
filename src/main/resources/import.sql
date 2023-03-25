@@ -1,0 +1,7 @@
+INSERT INTO MINHAS_DATAS(my_data) values (TO_DATE('2023-03-01', 'yyyy-mm-dd'));
+
+INSERT INTO MINHAS_DATAS(my_data) values (TO_DATE('2023-03-02', 'YYYY-MM-DD'));
+
+INSERT INTO MINHAS_DATAS(my_data) values (TO_DATE('2023-03-03', 'YYYY-MM-DD'));
+
+INSERT INTO MINHAS_DATAS(my_data) values (TO_DATE('2023-03-03', 'YYYY-MM-DD'));
